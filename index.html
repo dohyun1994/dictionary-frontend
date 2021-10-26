@@ -37,11 +37,12 @@
                     const {words} = data;
 
                     const template = words.map(word => {
+                       
                         return (
                             `
                            
                             <div class="item">
-                            <div class="word"><a href="${word.r_link}" target="_blank">${word.r_word}</a><sup>${word.r_seq}</sup> ${word.r_chi} ${word.r_pos}</div>
+                            <div class="word"><a href="${word.r_link}" target="_blank">${word.r_word}</a><sup>${word.r_seq ? word.r_seq : ""}</sup> ${word.r_chi} ${word.r_pos}</div>
                             <p class ="description">${word.r_des}</p>
                             </div>
                             `
