@@ -7,11 +7,11 @@ body {
 #search-box{
     width: 100%;
     text-align: center;
-    margin: 50px;
+    margin: 50px auto;
 }
 #search{
     all: unset;
-    width: 400px;
+    width: 660px;
     height: 50px;
     border-radius: 30px;
     padding-left: 20px;
@@ -37,7 +37,7 @@ body {
     width: 60%;
     columns: 2;
     margin: 50px auto;
-    text-align: center;
+   
 }
 .item {
     width: 100%;
@@ -45,6 +45,7 @@ body {
     margin-bottom: 10px;
     background: tomato;
     display: inline-block; /* 컬럼 짤림 방지*/
+    
     
 }
 
