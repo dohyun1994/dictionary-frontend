@@ -33,10 +33,16 @@ body {
 }
 
 
+.title {
+    text-align: center;
+}
+
+
+
 #container {
     width: 60%;
     columns: 2;
-    margin: 50px auto;
+    margin: 40px auto;
    
 }
 .item {
