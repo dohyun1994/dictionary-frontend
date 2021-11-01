@@ -1,7 +1,8 @@
 
 const query = document.getElementById('search')             // 입력한 값을 가져온다. id = 'search'
 const submitBtn = document.getElementById('submit')
-const BASE_URL = 'http://localhost:5000/api/words'
+//const BASE_URL = 'http://localhost:5000/api/words'
+const BASE_URL='https://dictionary-search-14.herokuapp.com/api/words'
 
 function checkIfStringHasSpecialCharacter(str) {
     const re = /[`!@#$%^&*()_+\-=\[\]{};':"\\|.<>\/?~]/;
