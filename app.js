@@ -42,11 +42,7 @@ function getData(baseUrl, query) {
         return;
     }
 
-     // if(checkIfStringHasLetters(query)){
-     //     enableSubmitBtn(false) // 활성화
-    //     container.innerHTML = "우리는 한국인입니다. 한글을 사랑하므로 한글 단어를 입력하세요!"
-    //     return;
-    //  }           
+            
 
     fetch( `${baseUrl}/${query}`, {
 
@@ -72,12 +68,6 @@ function getData(baseUrl, query) {
            
             return (
                 `
-                <div class="title">
-                    <span class="tit">			
-                        <span class="t_blue2">${word.r_seq == "1"? word.r_word + "찾기 결과": ""}</span>
-                     </span>
-                </div>
-
                 <div class="item">
                 <div class="word"><a href="${word.r_link}" target="_blank">${word.r_word}</a><sup>${word.r_seq ? word.r_seq : ""}</sup> ${word.r_chi} ${word.r_pos}</div>
                 <p class ="description">${word.r_des}</p>
@@ -85,7 +75,7 @@ function getData(baseUrl, query) {
                 `
             )
         })
-        container.innerHTML = query +  template.length + template.join("")  // DOM에 Template 삽입
+        container.innerHTML = query +  " 찾기 결과" + template.length +"건" + template.join("")  // DOM에 Template 삽입
     })
 }
 
